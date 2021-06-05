@@ -1,0 +1,1007 @@
+body{
+    height:5200px;
+}
+
+// 
+#head{
+    width:100%;
+    height:55px;
+    
+    position: relative;
+    z-index: 999;
+    display: flex;
+   
+
+    // h1文字设置
+    h1{
+        width: 0;
+        height:0;
+        font-size: 0;
+        color:#fff;
+
+    }
+
+   // 头部目录左
+    .first{
+        width: 179px;
+        height: 55px;
+        background-color: #cf1132;
+        line-height: 55px;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        img{
+            width: 20px;
+            height: 11px;
+            margin-right: 5px;
+        }
+       
+        &:hover~.catalog{                            
+          transition: all 5s ease-in;
+          display: inline-block;
+       }
+
+      
+    }
+      // 大目录
+      .catalog{
+        position: absolute;
+        top:55px;
+        height:482px;
+        width:100%;
+        left: 0px;            
+        background-color: rgba(255, 255, 255, 0.95);                     
+        display:none;
+        
+        &:hover{                             
+          transition: all 5s ease-in;
+          display: inline-block;
+       }
+       
+       
+   
+     
+     // 包裹ul
+     .catalog-font{
+       height:500px;
+       width: 1300px;  
+       margin:0 auto;          
+       display: flex;
+       transition: all .3s ease-in; 
+       
+       // 左边两个ul
+       .catalog-left{
+         height:478px;
+         width: 302px;
+         position: relative;
+         border-right: 1px solid #ede5e3;
+         display: flex;
+
+         a{
+              .red{
+                 display: inline-block;
+                 color: #cf1132;
+                 font-size: 14px;
+                 font-weight: bold;
+                 margin-top: 8px;
+              }
+            // 两个ul
+              .one,.two{
+                 color:#8e8b89;
+                 height:478px;
+                 width: 123px;
+                
+                 font-size: 12px;
+                 line-height: 23.5px;
+                 margin-top:18px ;
+                 // ul 第一个字体加重
+                  li:nth-of-type(1){
+                     font-weight: bold;
+               
+                  }
+                 .no1{
+                   height:13px;
+                   width: 24px;
+                  background-color: #f7c121;
+                  font-size: 7px;
+                  color: #b53131;
+                  font-weight: bold;
+                  border-radius: 1px;
+                  float: right;
+                  text-align: center;
+                  line-height: 13px;
+                  margin-top: 5px;
+                 }
+                .hot{
+                  height:13px;
+                  width: 24px;
+                  background-color: #b53131;
+                  font-size: 7px;
+                 color: #fff;
+                 font-weight: bold;
+                 border-radius: 1px;
+                 float: right;
+                 text-align: center;
+                 line-height: 13px;
+                  margin-top: 5px;
+                 }   
+                 
+                 li:nth-of-type(n+2):hover{
+                   color:#b53131;
+                 }
+                 li{
+                   left:0px;
+                 }
+
+              }
+             .two{                  
+                margin-top:40px ;
+                margin-left:13px;
+                .new{
+                   height:13px;
+                   width: 24px;
+                   background-color: #f7c121;
+                   font-size: 7px;
+                    color: #fff;
+                    font-weight: bold;
+                    border-radius: 1px;
+                    float: right;
+                    text-align: center;
+                    line-height: 13px;
+                    margin-top: 4px;
+                  }
+
+                  
+              }
+          }
+         // 更多游戏
+         .catalog-first{
+           width:27px;
+           height:95px;
+           background-color:#b53131;
+           color:white;
+           text-align: center;
+           margin-top: 150px;
+           font-size: 14px;
+           padding-top:10px;
+           margin-left: 12px;
+           cursor: pointer;
+         }
+       }
+       // 中间6个ul
+       .catalog-middle{
+         height:478px;
+         width: 846px;
+         
+         float: left;
+         display: flex;
+         .red{
+           display: inline-block;
+           color: #cf1132;
+           font-size: 14px;
+           font-weight: bold;
+           margin-top: 8px;
+         }
+         .three,.four{
+          
+            color:#8e8b89;
+            height:418px;
+            width: 123px;
+           
+            font-size: 12px;
+            line-height: 23.5px;
+            margin-top:36px ;
+            margin-left:10px;
+           // ul 第一个字体加重
+            li:nth-of-type(1){
+             font-weight: bold;
+             
+            }
+
+            .hot{
+             height:13px;
+             width: 24px;
+             background-color: #b53131;
+             font-size: 7px;
+              color: #fff;
+             font-weight: bold;
+             border-radius: 1px;
+             float: right;
+             text-align: center;
+             line-height: 13px;
+             margin-top: 4px;
+           }   
+           
+           li:nth-of-type(n+2):hover{
+             color:#b53131;
+           }
+
+         }
+         .three{
+           margin-top:  16px;
+         }
+
+         .five,.six,
+         .seven,.eight{
+            color:#8e8b89;
+            height:418px;
+            width: 123px;
+          
+            font-size: 12px;
+            line-height: 23.5px;
+            margin-top:59px ;
+            margin-left:10px;
+
+            li:nth-of-type(n+2):hover{
+             color:#b53131;
+           }
+
+        
+         }
+         .five,.four{
+             .new{
+               height:13px;
+               width: 24px;
+               background-color: #f7c121;
+               font-size: 7px;
+               color: #fff;
+                font-weight: bold;
+               border-radius: 1px;
+               float: right;
+               text-align: center;
+               line-height: 13px;
+               margin-top: 4px;
+             }
+         }
+         .three{
+           border-right: 1px solid #ede5e3;
+         }
+        // 更多游戏
+        .catalog-second{
+         width:27px;
+         height:95px;
+         background-color:#b53131;
+         color:white;
+         text-align: center;
+         margin-top: 150px;
+         font-size: 14px;
+         padding-top:10px;
+         margin-left: 12px;
+         cursor: pointer;
+       }
+     
+       
+       }
+     //  右边的ul
+       .catalog-right{
+         height:478px;
+         width: 302px;
+         position: relative;
+        
+         right:-24px;
+         .red{
+           display: inline-block;
+           color: #cf1132;
+           font-size: 14px;
+           font-weight: bold;
+           margin-top: 8px;
+         }
+         .nine{
+           color:#8e8b89;
+           height:478px;
+           width: 123px;
+          
+           font-size: 12px;
+           line-height: 23.5px;
+           margin-top:18px ;
+           // ul 第一个字体加重
+           li:nth-of-type(1){
+           font-weight: bold;
+           
+           }
+
+           li:nth-of-type(n+2):hover{
+             color:#b53131;
+           }
+
+           .hot{
+             height:13px;
+             width: 24px;
+             background-color: #b53131;
+             font-size: 7px;
+              color: #fff;
+             font-weight: bold;
+             border-radius: 1px;
+             float: right;
+             text-align: center;
+             line-height: 13px;
+             margin-top: 4px;
+            }   
+            .new{
+             height:13px;
+             width: 24px;
+             background-color: #f7c121;
+             font-size: 7px;
+              color: #fff;
+             font-weight: bold;
+             border-radius: 1px;
+             float: right;
+             text-align: center;
+             line-height: 13px;
+             margin-top: 4px;
+            }    
+            img{
+              width:100px;
+              height:25px;
+              position: absolute;
+              left:-10px;
+            }
+
+
+
+        }
+      }
+
+
+
+                            
+
+
+}
+     }
+
+  
+
+    // 头部目录中
+    .second{
+      height: 54px;
+      flex-grow: 1;      
+      background: url(../images/ahead/1.png) no-repeat 532px;
+    }
+
+    // 头部目录右
+    .third{
+      width:134px;
+      height:54px;
+      border-left:1px solid#ccc;
+      line-height: 54px;
+      text-align: center;      
+      font-size: 12px;
+      overflow: hidden;
+     
+    .time,.money{
+       width:134px;
+       height:55px;
+       animation:move2 6s linear infinite;
+       border-bottom:1px solid #ccc;
+
+       &:hover{
+           height:52px;
+           border-bottom:1px solid #cf1132;
+           color:#cf1132;
+           background-color: #F8F8F8;
+       }
+    }
+   
+
+    @keyframes move2 {
+      0%{
+          transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(0px);
+      }
+      60%{
+        transform: translateY(-55px);
+      }
+      100%{
+        transform: translateY(-55px);
+      }       
+    }
+
+    }
+
+  }
+
+  // 导航栏
+#nav{
+    width:100%;
+    height:60px;
+    background:url(../images/bnav/1.jpg);
+    position: sticky;
+    z-index: 99;
+    top:0;
+   
+    .nav-content{
+        width:1200px;
+        height:60px;
+        margin:0 auto;
+        
+        // ul
+       .box{
+          width:1288px;
+          height:60px;
+          margin-left: 20px;
+            
+        //  li的宽高
+          li{            
+              width:90px;
+              height:60px;
+              float: left;
+              line-height: 60px;
+              text-align: center;
+              font-size: 14px;
+              position: relative;
+              z-index: 1;
+
+              // 第一个里自带小方框
+              &:nth-of-type(1)  {
+                  height:65px;
+                  color:black;
+                  background: url(../images/bnav/2.jpg) no-repeat 0 0 ;
+              }
+              // 点击每个li出现大方框
+              &:nth-of-type(2):hover>.one,
+              &:nth-of-type(3):hover>.two,
+              &:nth-of-type(4):hover>.three,
+              &:nth-of-type(5):hover>.four,
+              &:nth-of-type(6):hover>.five,
+              &:nth-of-type(7):hover>.six,
+              &:nth-of-type(11):hover>.seven,
+              &:nth-of-type(12):hover>.eight
+              {
+                display: inline-block;
+              }                            
+               // 每个li点出小方框
+              &:nth-of-type(-n+13):hover{
+                position: relative;
+                z-index: 1;
+                height:65px;
+                color:black;
+                background: url(../images/bnav/2.jpg) no-repeat 0 0 ;
+              }
+              // 使li再点击显示方块的时候竖线隐藏
+              &:hover .dif1, &:hover .dif{
+                display: none;                
+              }                                                                                    
+             // a里面的字体颜色
+              a{   
+                 width:85px;
+                 height:60px;                                     
+                 color:#fff; 
+                 position: relative;
+                 z-index: 99; 
+
+                 &:hover{
+                  color:black;
+                 }
+                      
+               }
+               // 竖线
+              .dif,.dif1{
+                width:0px;
+                height:10px;
+                border-right: 1px solid #fff;
+                position: absolute;
+                margin-left:24px;
+                top:26px;           
+              }
+              .dif1{
+                 margin-left:18px;
+              }
+              // 点击新闻资讯出现大框框
+              .one{                  
+                  width:1520px;                 
+                  height:140px;
+                  position: relative;;
+                  left:-270px;
+                  background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                  display: none;
+                  // 包裹5个图片
+                 .tox{
+                    width:1043px;
+                    height:118px;
+                    margin: auto;
+                    padding-left: 10px;
+                   
+                    // 5个小盒子
+                    .box1,.box2,.box3,.box4,.box5{
+                      float: left;
+                      margin-left:26px ;
+
+                    // 设置图片大小
+                       a img{
+                        width:148px;
+                        height:90px;
+                        margin-top:32px;                       
+                        
+                      }
+
+                      // 图片的左上角字体
+                      a p:nth-of-type(1){
+                        position:absolute;
+                        width:21px;                      
+                        line-height: 18.5px;                       
+                        top:-75px;                       
+                        background-color: #b79e57;
+                      }
+                      // 图片的下面字体
+                      a p:nth-of-type(2){
+                        width:130px;
+                        line-height: 17px;
+                        text-align: left;
+                        margin-left: 8px;
+                        position:absolute;
+                        top:-19px;
+                        font-size: 12px;
+                      }
+                    }
+                    
+                   
+                  
+
+                   
+
+                }
+
+
+
+
+
+
+
+              }
+              // 点击式神录出现
+              .two{
+                width:1520px;                 
+                height:140px;
+                position: relative;
+                left:-360px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+
+                // 包裹7 个盒子并居中
+                .tox{
+                  width:1150px;                 
+                  height:140px;
+                  margin:0 auto;
+
+                  // 七个小盒子
+                  .box1,.box2,.box3,.box4,.box5,.box6,.box7{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:148px;
+                      height:90px;
+                      margin-top:32px; 
+                      margin-left:12px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p:nth-of-type(1){                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:39px;
+                      position: absolute;;                                                            
+                      top:-7px;
+                      right:0px;                   
+                      background-color: #b79e57;
+                      color:black;
+                      font-weight: bold;
+                    }
+                  }
+
+
+                }
+                
+
+
+               
+
+              }
+               // 点击游戏攻略出现
+              .three{
+                width:1520px;                 
+                height:140px;
+                position: relative;;
+                left:-450px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+                .tox{
+                  width:754px;                 
+                  height:140px;
+                  margin:0 auto;
+
+                  // 七个小盒子
+                  .box1,.box2,.box3,.box4{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:164px;
+                      height:94px;
+                      margin-top:27px; 
+                      margin-left:20px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p:nth-of-type(1){                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:66px;
+                      position: absolute;                                                            
+                      top:-7px;
+                      right:0px;                   
+                      background-color: #b79e57;
+                      color:black;
+                      font-weight: bold;
+                    }
+                  }
+
+
+                }
+
+              }
+               // 点击同人社区出现
+              .four{
+                width:1520px;                 
+                height:140px;
+                position: relative;
+                left:-540px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+
+                .tox{
+                  width:1060px;                 
+                  height:140px;
+                  margin:0 auto;
+
+
+                  .box3{
+                    height:96px;
+                    width:275px;
+                    margin-top:-24px; 
+                    margin-left:5px;
+                   
+                   
+
+                    .box3-01{
+                       float: left;
+                       font-size: 22px;
+                       margin-left:8px;
+                      
+                       margin-top: 17px;
+                       width:120px;
+                       height:20px;
+                       color:#231c11;
+                     }
+                     .box3-02{
+                        float: left;                       
+                        margin-left: 20px; 
+                        margin-bottom:-28px; 
+                        padding-left:5px;                       
+                        font-size: 13px;                      
+                        color:#231c11;
+
+                     }
+                     .box3-03{
+                      float: left;
+                      position: relative;
+                      width:0px;
+                      height:10px;
+                      border-right: 2px solid #000000;                    
+                      top:26px; 
+                      left:10px;     
+
+                     }
+                    
+                  }
+
+                  .sh{
+                    float: left;
+                    position: relative;
+                    width:0px;
+                    height:100px;
+                    border-right: 1px solid #a78442;                    
+                    top:17px; 
+                    left:-10px;     
+
+                  }
+                  .box4{
+                    height:96px;
+                    width:294px;
+                    margin-top:-125px; 
+                    margin-left:272px;
+                    
+
+                    .box4-01{
+                      float: left;
+                      font-size: 22px;                                   
+                      margin-top: 16px;
+                      margin-left: 80px;
+                      width:120px;
+                      height:20px;
+                      color:#231c11;
+                     
+                    }
+                    .box4-02{
+                       float: left;                       
+                       margin-left: 14px; 
+                       margin-bottom:-28px; 
+                       padding-left:5px;                       
+                       font-size: 13px;                      
+                       color:#231c11;
+
+                    }
+                  }
+                   
+
+                  // 七个小盒子
+                  .box1,.box2,.box3,.box4{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:220px;
+                      height:96px;
+                      margin-top:27px; 
+                      margin-left:20px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p:nth-of-type(1){                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:189px;
+                      position: relative;                                                            
+                      top:-49px;
+                      right:-38px;
+                      font-size: 13px;                                       
+                      color :#b79e57;
+                      
+                    }
+                  }
+
+
+                }
+
+              }
+               // 点击泛娱乐出现
+              .five{
+                width:1520px;                 
+                height:140px;
+                position: relative;;
+                left:-630px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+
+                .tox{
+                  width:1180px;                 
+                  height:140px;
+                  margin:0 auto;
+
+                  // 七个小盒子
+                  .box1,.box2,.box3,.box4,.box5,.box6,.box7{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:144px;
+                      height:90px;
+                      margin-top:25px; 
+                      margin-left:20px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p{                                   
+                      line-height: 24px;
+                      height:24px;
+                      width:134px;
+                      position: absolute;                                                            
+                      top:-7px;
+                      right:0px;                   
+                      background-color: #b79e57;
+                      color:black;
+                      font-weight: bold;
+                    }
+                  }
+
+
+                }
+
+              }
+               // 点击视听中心出现
+              .six{
+                width:1520px;                 
+                height:140px;
+                position: relative;;
+                left:-720px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+                .tox{
+                  width:584px;                 
+                  height:140px;
+                  margin:0 auto;
+
+                  // 七个小盒子
+                  .box1,.box2,.box3{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:170px;
+                      height:98px;
+                      margin-top:27px; 
+                      margin-left:20px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p{                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:66px;
+                      position: absolute;                                                            
+                      top:-7px;
+                      right:0px;                   
+                      background-color: #b79e57;
+                      color:black;
+                      font-weight: bold;
+                    }
+                  }
+
+
+                }
+
+              }
+               // 点击官方渠道出现
+              .seven{
+                width:1520px;                 
+                height:140px;
+                position: relative;;
+                left:-1081px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+
+                .tox{
+                  width:1214px;                 
+                  height:140px;
+                  margin:0 auto;
+
+                  // 七个小盒子
+                  .box1,.box2,.box3,.box4,.box5,.box6{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:80px;
+                      height:80px;
+                      margin-top:24px; 
+                      margin-left:90px;
+                     
+                    }
+                    // 图片的文字
+                    a p:nth-of-type(1){                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:66px;
+                      position: relative;                                                            
+                      top:-22px;
+                      right:-96px;                   
+                      
+                      color:white;
+                     
+                    }
+                  }
+                  .box6{ 
+                    float: left;
+                    position: relative;
+                    width:0px;
+                    height:100px;
+                    border-right: 1px solid #a78442;                    
+                    top:17px; 
+                    left:85px;     
+
+                 
+
+                  }
+
+
+                  .box7{
+                    float: left;
+                    margin-left: 168px;
+
+
+
+                    p{
+                      float: left;
+                      width:165px;
+                      margin-top:22px;
+                      line-height: 20px;
+                      
+                      font-size:12px;
+                      text-align: left;
+                    }
+                  }
+
+
+                }
+
+
+
+              }
+               // 点击IP新游预约出现
+              .eight{
+                width:1520px;                 
+                height:140px;
+                position: relative;;
+                left:-1171px;
+                background: url(../images/bnav/3.jpg) no-repeat -204px 0 /cover;
+                display: none;
+
+                .tox{
+                  width:754px;                 
+                  height:140px;
+                  margin:0 auto;
+                  margin-right: -26px;
+
+                  // 七个小盒子
+                  .box1,.box2{
+                    float:left;
+
+                    // 图片
+                    a img{
+                      width:210px;
+                      height:90px;
+                      margin-top:16px; 
+                      margin-left:20px;
+                      border:2px solid black;
+                    }
+                    // 图片的文字
+                    a p:nth-of-type(1){                                   
+                     line-height: 24px;
+                      height:24px;
+                      width:218px;
+                      position: relative;                                                            
+                      top:-24px;
+                      right:-18px;                   
+                      font-size: 13px;
+                      color:white;
+                      font-weight: bold;
+
+                      
+                    }
+                  }
+
+
+                }
+
+              }              
+            }
+                           
+          //  搜索小图标
+          .search {
+            
+           
+              img{
+               position: relative;                    
+               height: 20px;         
+               bottom: -4px;
+               right:-8px; 
+               transition: all 0.5s;
+
+               //自身hover转动  
+              &:hover{
+                  transform: rotateY(180deg);
+              }
+             }
+          }
+
+        
+        }
+      
+
+      }
+        
+}
+

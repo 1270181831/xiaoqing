@@ -1,0 +1,230 @@
+#footer {
+  position: relative;
+  width: 100%px;
+  height: 800px;
+  margin-top: 1415px;
+  bottom: 0;
+}
+#footer .footer-backdrop {
+  width: 100%px;
+  height: 900px;
+  background: url(../images/t/1.png) center center no-repeat;
+}
+#footer .footer-character {
+  left: 200px;
+  top: 200px;
+  position: absolute;
+  width: 1080px;
+  height: 676px;
+}
+#footer .footer-character .footer-character-left {
+  position: absolute;
+  top: 62px;
+  left: 174px;
+  height: 200px;
+  width: 83px;
+  background: url(../images/cthree/1.png) -1028px -287px no-repeat;
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box {
+  position: relative;
+  width: 232px;
+  height: 232px;
+  border-radius: 50%;
+  top: 84px;
+  right: -856px;
+  overflow: hidden;
+  z-index: 2;
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box:hover .box2 {
+  transform: translateX(132px) translateY(-132px);
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box:hover .box3 {
+  opacity: 1;
+  transform: scale(1.2);
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box:hover ~ .box4 {
+  animation: nnove 2s linear infinite;
+}
+@keyframes nnove {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box:hover ~ .box5 {
+  animation: nove 2s linear infinite;
+}
+@keyframes nove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box .box1 {
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  cursor: pointer;
+  z-index: -1;
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box .box2 {
+  position: absolute;
+  right: -55px;
+  top: -52px;
+  transition: all ease 0.8s;
+}
+#footer .footer-character .footer-character-moon .footer-character-moon-box .box3 {
+  position: absolute;
+  right: -22px;
+  top: -38px;
+  opacity: 0;
+  width: 290px;
+  height: 290px;
+  transform: scale(0.8);
+  transition: all 0.8s;
+}
+#footer .footer-character .footer-character-moon .box4,
+#footer .footer-character .footer-character-moon .box5 {
+  position: absolute;
+  right: -61px;
+  top: 12px;
+  width: 356px;
+  height: 354px;
+  transition: all ease 0.8s;
+}
+#footer .footer-character .footer-character-moon .box6 {
+  position: absolute;
+  z-index: 0;
+  right: -31px;
+  top: 61px;
+  width: 278px;
+  height: 278px;
+  transition: all ease 0.8s;
+  animation: start 2s linear infinite;
+}
+@keyframes start {
+  0% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top {
+  position: relative;
+  bottom: -232px;
+  left: 530px;
+  width: 200px;
+  height: 25px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 25px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top span {
+  position: absolute;
+  left: -43px;
+  top: 0px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-01,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-02,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-03,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-04 {
+  float: left;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-01:hover,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-02:hover,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-03:hover,
+#footer .footer-character .footer-character-bottom .footer-character-bottom-top .footer-character-bottom-top-04:hover {
+  background-color: #a70d01;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle {
+  position: relative;
+  bottom: -230px;
+  width: 1045px;
+  height: 60px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 25px;
+  margin: 23px auto;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-img {
+  float: left;
+  margin-top: 7px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-img img {
+  margin-left: 12px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-img img:nth-of-type(2) {
+  margin-left: 1px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-letter {
+  float: right;
+  position: absolute;
+  font-size: 12px;
+  width: 660px;
+  height: 50px;
+  right: 0px;
+  color: #fff;
+  line-height: 23px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-letter span:hover {
+  text-decoration: underline;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-letter a {
+  color: white;
+  text-decoration: none;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-middle .footer-character-bottom-middle-letter a span {
+  display: inline-block;
+  background-color: #610000;
+  width: 137px;
+  height: 26px;
+  line-height: 26px;
+  margin-left: 340px;
+  text-align: center;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-bottom {
+  position: relative;
+  bottom: -232px;
+  left: 8px;
+  width: 1045px;
+  height: 100px;
+  font-size: 12px;
+  color: #b2b8bc;
+  line-height: 25px;
+  margin: -20px auto;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-bottom p {
+  line-height: 21px;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-bottom p .bold {
+  color: #fff;
+}
+#footer .footer-character .footer-character-bottom .footer-character-bottom-bottom p .bold:hover {
+  text-decoration: underline;
+}

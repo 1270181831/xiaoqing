@@ -1,0 +1,299 @@
+#footer{
+    position: relative;
+    width: 100%px;
+    height: 800px;             
+    margin-top:1415px;
+    bottom:0;             
+   
+    // 大背景
+    .footer-backdrop{
+        width: 100%px;
+        height: 900px;
+        background: url(../images/t/1.png) center center no-repeat;
+
+    }
+
+    // 文字加特效
+    .footer-character{
+        left: 200px;
+        top: 200px;
+        position: absolute;
+        width: 1080px;
+        height: 676px;
+        // 左边阴阳师的图标
+        .footer-character-left{
+            position: absolute;
+            top: 62px;
+            left: 174px;
+            height: 200px;
+            width: 83px;
+           
+           background: url(../images/cthree/1.png) -1028px -287px no-repeat;
+
+        }
+       // 中间月光   
+        .footer-character-moon{
+           //包裹隐藏部分    
+            .footer-character-moon-box{           
+                position: relative;
+                width: 232px;
+                height: 232px;
+                border-radius: 50%;
+                top: 84px;
+                right: -856px;
+                overflow: hidden;
+                z-index: 2;
+            //   hover撤回遮挡
+                &:hover .box2{
+                  transform: translateX(132px) translateY(-132px);
+
+                }
+
+            //   hover出现二维码
+                &:hover .box3{
+                  opacity: 1;
+                  transform: scale(1.2);
+                }
+
+              //   小圆特效
+                &:hover ~.box4{
+                  
+                
+                  animation: nnove 2s linear infinite;
+                }
+
+                @keyframes nnove {
+                  0%{
+                    transform: scale(0.8);
+                  }
+                  100%{
+                    transform: scale(1);
+                  }
+                  
+                }
+              //   大圆特效
+                &:hover ~.box5{                
+                  
+                  animation: nove 2s linear infinite;
+                }
+                
+                @keyframes nove {
+                    0%{
+                      transform: scale(1);
+                    }
+                    100%{
+                      transform: scale(1.2);
+                    }
+                    
+                }
+              .box1{
+                position: absolute;
+                top: -22px;
+                right: -22px;
+                cursor: pointer;
+                z-index: -1;
+           
+              }
+              .box2{
+                position: absolute;
+                right: -55px;
+                top: -52px;
+                transition: all  ease 0.8s;
+
+                
+           
+              }
+              .box3{
+                position: absolute;
+                right: -22px;
+                top: -38px;
+                opacity: 0;
+                width: 290px;
+                height: 290px;
+                transform: scale(0.8);
+                transition: all 0.8s;
+           
+              }
+            }
+
+            // 特效大小圆
+             .box4,
+             .box5{
+             
+                position: absolute;              
+                right: -61px;
+                top: 12px;
+                width: 356px;
+                height: 354px;                
+                transition: all  ease 0.8s;
+            }
+            // 闪烁特效
+            .box6{
+                position: absolute; 
+                z-index: 0;             
+                right: -31px;
+                top: 61px;
+                width: 278px;
+                height: 278px;
+                             
+                transition: all  ease 0.8s;
+                animation: start 2s linear infinite;
+            }
+            @keyframes start {
+                0% {
+                    opacity: 0.1;
+                }
+                15% {
+                    opacity: 0.5;
+                }
+                30% {
+                    opacity: 0.8;
+                }
+                45% {
+                    opacity: 1;
+                }
+                60% {
+                    opacity: 0.8;
+                }
+                80% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 0.1;
+                }
+            }
+
+
+        }
+
+
+         // 下面的三行文字信息
+        .footer-character-bottom{
+          //上面一行分享小图标
+           .footer-character-bottom-top{
+              position: relative;
+              bottom: -232px;
+              left: 530px;
+              width: 200px;
+              height: 25px;
+              font-size: 12px;
+              color: #fff;
+              line-height: 25px;
+             
+              // 分享到
+              span{
+
+                position: absolute;
+                left: -43px;
+                top: 0px;
+              }
+              // 图片
+              .footer-character-bottom-top-01,
+              .footer-character-bottom-top-02,
+              .footer-character-bottom-top-03,
+              .footer-character-bottom-top-04{
+                 float: left;
+                 background-color: #fff;
+                 width: 20px;
+                 height: 20px;
+                 border-radius: 50%;
+                 margin-left: 5px;
+                 cursor: pointer;
+
+                 &:hover{
+                    background-color: #a70d01;
+                 }
+            }
+
+           }
+          // 中间一行图片加文字  
+           .footer-character-bottom-middle{
+              position: relative;
+              bottom: -230px;           
+              width: 1045px;
+              height: 60px;
+              font-size: 12px;
+              color: #fff;
+              line-height: 25px;
+              margin:23px auto;
+             
+              //   包裹中间文字的图片
+              .footer-character-bottom-middle-img{
+                float: left;
+               
+                margin-top: 7px;
+                img{
+                    margin-left:12px;
+
+                    &:nth-of-type(2){
+                        margin-left:1px;
+                    }
+                }
+              }
+             //   包裹span里的文字
+              .footer-character-bottom-middle-letter{
+                  float: right;
+                  position: absolute;                
+                  
+                  font-size: 12px;                
+                  width: 660px;
+                  height: 50px;
+                  right:0px;
+                  color: #fff;
+                  line-height: 23px;
+
+                //   span文字hover显示下划线
+                  span:hover{
+                      text-decoration: underline;
+
+                  }
+
+                // 最后里面红色文字
+                 a{  
+                     color:white;
+                     text-decoration: none;
+                    span{
+                        display: inline-block;
+                        background-color: #610000;
+                        width: 137px;
+                        height: 26px;
+                        line-height: 26px;
+                        margin-left: 340px;
+                        text-align: center; 
+                    }
+                 }
+              }
+        
+           }
+          // 最下面的文字   
+           .footer-character-bottom-bottom{
+              position: relative;
+               bottom: -232px; 
+               left:8px;          
+              width: 1045px;
+              height: 100px;
+              font-size: 12px;
+              color: #b2b8bc;
+              line-height: 25px;
+              margin:-20px auto; 
+             //  包裹文字
+              p{
+                  line-height: 21px;
+                  .bold{
+                    color: #fff;
+                    &:hover{
+                      text-decoration: underline;
+                    }
+                  }
+                 
+                  
+              }
+
+           } 
+            
+        }
+    }
+
+
+
+}
